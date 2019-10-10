@@ -1,0 +1,64 @@
+#ChartSetDefault OFF
+AddDefaultCharset UTF-8
+#Representa el encendido del direccionamiento
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tecnm\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tecnm\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/tecnm\.links2books\.com\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^uach\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.uach\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/uach\.links2books\.com\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^uqroo\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.uqroo\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/uqroo\.links2books\.com\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^cgut\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cgut\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/cgut\.links2books\.com\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^unid\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.unid\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/unid\.links2books\.com\/login\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^myschool\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.myschool\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/myschool\.links2books\.com\/login\.php" [R=301,L]
+
+#Desactiva la navegación de directorios *Options All -Indexes --Desabilita los directorios
+#ErrorDocument 403 /403.php --Captura el tipo de error, 
+#y despues lo asigna a la pagina personalizada que se desea visualizar
+Options All -Indexes
+ErrorDocument 403 /403.php
+
+#Options -Indexes ErrorDocument 404  /404.php
+
+ErrorDocument 404 /404.php
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+RewriteCond %{HTTP_HOST} ^anahuac\.links2books\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.anahuac\.links2books\.com$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Sectigo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/anahuac\.links2books\.com\/login\.php" [R=301,L]
+
