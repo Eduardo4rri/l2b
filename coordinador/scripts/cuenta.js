@@ -593,7 +593,7 @@ function listarEscuelasSeleccionadas()
 	{
 		g_coordinador_escuela_seleccionada_id = $('#escuela-pedido-select').val();
 	});
-
+ 
 
 	$('#escuela-select').html(html_opciones);
 	$('#escuela-select').selectpicker('refresh');
