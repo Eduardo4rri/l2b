@@ -29,6 +29,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="../sistema/vendor/bootstrap/css/bootstrap.min.css?token=<?php echo $token; ?>" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../sistema/css/shop_styles.css">
 
 	<!-- Custom styles for this template -->
 	<link href="../sistema/css/shop-homepage.css" rel="stylesheet">
@@ -53,129 +54,18 @@
 
 	<!-- jVectorMap -->
 	<link href="../sistema/vendor/jvectormap/jquery-jvectormap-2.0.3.css" rel="stylesheet" media="screen" />
-	<style type="text/css">
-		.map-container {
-			height: 300px;
-		}
-
-		.jvmap-smart {
-			width: 100%;
-			height: 100%;
-		}
-
-		.map-container:after,
-		.clearfix {
-			display: block;
-			content: '';
-			clear: both;
-		}
-
-		@media only screen and (min-width: 576px) {
-			.map-container {
-				height: 350px;
-			}
-		}
-
-		@media only screen and (min-width: 768px) {
-			.map-container {
-				height: 400px;
-			}
-		}
-
-		@media only screen and (min-width: 992px) {
-			.map-container {
-				height: 500px;
-			}
-		}
-
-		@media only screen and (min-width: 1200px) {
-			.map-container {
-				height: 600px;
-			}
-		}
-	</style>
 
 	<!-- More custom styles for this template -->
-	<style>
-		@media only screen and (min-width: 768px) {
-			#img-subdominio {
-				text-align: right;
-			}
-		}
-
-		@media only screen and (max-width: 767px) {
-			#alert-bienvenida {
-				text-align: center;
-			}
-
-			#img-subdominio {
-				text-align: center;
-			}
-		}
-
-		.links-style {
-			color: #007bff;
-			cursor: pointer;
-		}
-
-		#img-logos {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-
-		#nav {
-			background-color: #ffffff;
-		}
-
-		#carrito-logo {
-			color: white;
-		}
-
-		#img-dom {
-			border-radius: 20px;
-			border: #28a745 4px solid;
-			width: 50px;
-			height: 50px;
-		}
-
-		.fixed-cart-button {
-			background-color: #4b6595;
-			color: #4b6595;
-			border: none;
-			outline: none;
-			position: fixed;
-			bottom: 50%;
-			right: 15px;
-			height: 50px;
-			width: 50px;
-			margin-bottom: 20px;
-			box-shadow: 1px 3px 5px #86c3ff;
-		}
-
-		.fixed-map-nav-button {
-			background-color: #4b6595;
-			color: #FFFFFF;
-			border: none;
-			outline: none;
-			position: fixed;
-			bottom: 50%;
-			left: 15px;
-			height: 50px;
-			width: 50px;
-			margin-bottom: 20px;
-			box-shadow: 1px 3px 5px #86c3ff;
-		}
-	</style>
 
 </head>
 
 <body>
 
 	<!-- Navigation Start -->
-	<nav id="nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+	<nav id="nav" class="navbar navbar-expand-lg navbar-dark">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img src="../sistema/img/sitio_navegacion_138x70.png" style="width: 174px; height: 70px;border-radius: 7px;"></a>
+			<!--Revisar en production-->
+			<a class="navbar-brand" href="<?=$_SERVER['DOCUMENT_ROOT'] ?>"><img src="../sistema/img/sitio_navegacion_138x70.png" style="width: 174px; height: 70px;border-radius: 7px;"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive" aria-controls="navbar-responsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>

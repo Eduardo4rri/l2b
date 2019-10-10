@@ -33,3 +33,53 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+        .mensaje-sesion-redireccionamiento{
+            position:fixed;
+            top:100px;
+            
+        }
+        @media (min-width: 1200px){
+             .mensaje-sesion-redireccionamiento{
+                max-width:1400px !important;
+             }
+        }
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+
+/*Login*/
+
+
+.btn_animate{
+ transition: 0.9s;
+}
+
+.btn_anim:hover{
+  color:#F78E1D;
+  margin: black;
+  border-width: 3px;
+  border-bottom-color: #4B6595;
+  transition: all 0.4s;
+}
+
+.btn_login{
+  transition: 0.9s;
+}
+
+.btn_login:hover{
+  transition-duration: 3s;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,68,121,1) 15%, rgba(0,212,255,1) 100%);
+}
+

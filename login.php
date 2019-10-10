@@ -37,32 +37,7 @@
 	<!-- Loading Modal -->
 	<link href="sistema/vendor/loading-modal/css/jquery.loadingModal.min.css" rel="stylesheet">
 
-    <style>
-		.bd-placeholder-img {
-			font-size: 1.125rem;
-			text-anchor: middle;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-		}
-        .mensaje-sesion-redireccionamiento{
-            position:fixed;
-            top:100px;
-            
-        }
-        @media (min-width: 1200px){
-             .mensaje-sesion-redireccionamiento{
-                max-width:1400px !important;
-             }
-        }
-		@media (min-width: 768px) {
-			.bd-placeholder-img-lg {
-				font-size: 3.5rem;
-			}
-		}
-	</style>
-	
+  
 </head>
 
 <body class="text-center bg-white">
@@ -86,13 +61,13 @@
 					<input type="email" id="login" class="form-control" placeholder="Correo electrónico" required autofocus>
 					<input type="password" id="clave" class="form-control" placeholder="Contraseña" required>
 					<br>
-					<button class="btn btn-lg btn-primary btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</button>
+					<button class="btn btn-lg btn-primary btn-block btn_login" type="submit"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</button>
 				</form>
-				<button type="button" class="btn btn-link" id="recuperar-clave"><i class="fas fa-lock"></i> Olvidé mi contraseña</button>
+				<button type="button" class="btn btn_anim" id="recuperar-clave"><i class="fas fa-lock"></i> Olvidé mi contraseña</button>
 				<br>
-				<button type="button" class="btn btn-link" id="registro-alumno"><i class="fas fa-graduation-cap"></i> Registrarse como alumno</button>
+				<button type="button" class="btn btn_anim" id="registro-alumno"><i class="fas fa-graduation-cap"></i> Registrarse como alumno</button>
 				<br>
-				<button type="button" class="btn btn-link" id="registro-terminos-y-condiciones"><i class="fas fa-file-alt"></i> Términos y condiciones</button>
+				<button type="button" class="btn btn_anim" id="registro-terminos-y-condiciones"><i class="fas fa-file-alt"></i> Términos y condiciones</button>
 				<br>
 				<!--<button type="button" class="btn btn-link" id="registro-sub-dominio"><i class="fas fa-globe"></i> Links2Academy</button>-->
 				<br>
