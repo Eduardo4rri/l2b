@@ -114,42 +114,6 @@ function login($login, $clave, $dominio)
             $usr->usuario_programa_nivel       = $rspta->programa_nivel;
         }
     }
-
-    if ($login_encontrado == false)
-    {
-        $rspta = $usuario->loginSinSubdominio($login, $clave);
-        if ($rspta)
-        {
-            if($rspta->rol === 'coordinador_dominio' || $rspta->rol === 'coordinador_zona' || $rspta->rol === 'coordinador_subzona' || $rspta->rol === 'coordinador_escuela')
-            {
-                $login_encontrado                  = true;
-                $login_encontrado_tipo             = $rspta->rol;
-                $login_idusuario                   = $rspta->idusuario;
-                $usr->usuario_iddominio            = $rspta->iddominio;
-                $usr->usuario_idusuario            = $rspta->idusuario;
-                $usr->usuario_idescuela            = $rspta->usuario_idescuela;
-                $usr->usuario_idprograma           = $rspta->usuario_idprograma;
-                $usr->usuario_idcurso              = $rspta->usuario_idcurso;
-                $usr->usuario_idconsignacion       = $rspta->usuario_idconsignacion;
-                $usr->usuario_rol                  = $rspta->rol;
-                $usr->usuario_nombre               = $rspta->nombre;
-                $usr->usuario_apellido_paterno     = $rspta->apellido_paterno;
-                $usr->usuario_apellido_materno     = $rspta->apellido_materno;
-                $usr->usuario_email                = $rspta->email;
-                $usr->usuario_login                = $rspta->login;
-                $usr->usuario_telefono             = $rspta->telefono;
-                $usr->usuario_matricula            = $rspta->matricula;
-                $usr->usuario_ciudad               = $rspta->ciudad;
-                $usr->usuario_estado               = $rspta->estado;
-                $usr->usuario_codigo_postal        = $rspta->codigo_postal;
-                $usr->usuario_terminos_condiciones = $rspta->terminos_condiciones;
-                $usr->usuario_escuela_nombre       = $rspta->escuela_nombre;
-                $usr->usuario_programa_nombre      = $rspta->programa_nombre;
-                $usr->usuario_programa_nivel       = $rspta->programa_nivel;
-            }
-        }
-    }
-
     if ($login_encontrado == true)
     {
         $dominatrix                                    = new Dominio();
