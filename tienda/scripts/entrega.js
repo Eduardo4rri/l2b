@@ -373,31 +373,14 @@ function tiendaCargarDatosVenta()
 				$('#entrega-venta-id').html(venta.idventa);
 				$('#entrega-venta-fecha-hora').html(venta.fecha_hora);
 				$('#entrega-venta-fecha-entrega').html(venta.fecha_entrega_prevista);
-				console.log(venta.estatus_pago_leyenda);
-				if (venta.estatus_pago_leyenda === 'PAGADA' && usuario.usuario_rol !== 'alumno') 
-				{
-					$('#entrega-venta-estatus').html('APROBADA');	
-				}
-				else
-				{
-					$('#entrega-venta-estatus').html(venta.estatus_pago_leyenda);	
-				}
-				
+				$('#entrega-venta-estatus').html(venta.estatus_pago_leyenda);
 				$('#escuela-nombre').html('<strong>Escuela: </strong>' + venta.entrega_escuela);
 				$('#escuela-campus').html('<strong>Campus: </strong>' + venta.entrega_campus);
 				$('#escuela-calle').html('<strong>Calle: </strong>' + venta.entrega_calle);
 				$('#escuela-ciudad').html('<strong>Ciudad: </strong>' + venta.entrega_ciudad);
 				$('#escuela-estado').html('<strong>Estado: </strong>' + venta.entrega_estado);
 				$('#escuela-codigo-postal').html('<strong>Código Postal: </strong>' + venta.entrega_codigo_postal);
-				if(usuario.usuario_rol === 'alumno')
-				{
-					$('#usuario-nombre').html('<strong>Comprador: </strong>' + venta.comprador_nombre);
-				}
-				else
-				{
-					$('#usuario-nombre').html('<strong>Solicitante: </strong>' + venta.comprador_nombre);
-				}
-				
+				$('#usuario-nombre').html('<strong>Comprador: </strong>' + venta.comprador_nombre);
 				$('#usuario-login').html('<strong>Correo electrónico: </strong>' + venta.comprador_correo_electronico);
 				$('#usuario-matricula').html((usuario.usuario_rol === 'alumno' ? '<strong>Matrícula: </strong>' + venta.comprador_matricula : '<strong>DNI: </strong>' + venta.comprador_matricula));
 				$('#usuario-telefono').html('<strong>Teléfono: </strong>' + venta.comprador_telefono);
@@ -572,14 +555,7 @@ function tiendaCargarDatosPago(idpago)
 				{
 					html_detalles += '<br>';
 					html_detalles += '<div class="text-center">';
-					if(pago.pago_estatus === "1")
-					{
-					    html_detalles += '<h3>El estatus de tu consignación es: <strong>APROBADA</strong></h3>';
-					}
-					else
-					{
-					    html_detalles += '<h3>El estatus de tu consignación es: <strong>' + pago.pago_estatus_leyenda + '</strong></h3>';
-					}					
+					html_detalles += '<h3>El estatus de tu consignación es: <strong>' + pago.pago_estatus_leyenda + '</strong></h3>';
 					html_detalles += '<br>';
 					html_detalles += '<h6>• ' + pago.pago_descripcion + '</h6>';
 					html_detalles += '<h6>• ' + pago.pago_paso_1 + '</h6>';
