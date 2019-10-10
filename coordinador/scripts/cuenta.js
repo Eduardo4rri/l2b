@@ -587,6 +587,14 @@ function listarEscuelasSeleccionadas()
 		}
 		html_opciones += '</optgroup">';
 	}
+	$('#escuela-pedido-select').html(html_opciones);
+	$('#escuela-pedido-select').selectpicker('refresh');
+	$('#escuela-pedido-select').change(function()
+	{
+		g_coordinador_escuela_seleccionada_id = $('#escuela-pedido-select').val();
+	});
+
+
 	$('#escuela-select').html(html_opciones);
 	$('#escuela-select').selectpicker('refresh');
 	$('#escuela-select').change(function()

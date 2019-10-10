@@ -173,13 +173,6 @@
 	</div>
 </div>
 
-<div class="alert blue-alert" role="alert">
-	<strong>¡Bienvenido a <i class="fas fa-user"></i> Mi Cuenta!</strong><br><br>
-	En está página podrás:<br>
-	• Editar y actualizar tus datos<br>
-	• Consultar el listado de las compras que has realizado<br>
-</div>
-
 <div class="row">
 	<div class="col-xs-12 col-md-12 mb-4">
 		<div class="card h-100">

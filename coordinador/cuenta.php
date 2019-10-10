@@ -145,13 +145,6 @@
 	</div>
 </div>
 
-<div class="alert blue-alert" role="alert">
-	<strong>¡Bienvenido a <i class="fas fa-user"></i> Mi Cuenta!</strong><br><br>
-	En está página podrás:<br>
-	• Editar y actualizar tus datos<br>
-	• Consultar el listado de las consignaciones de tus escuelas<br>
-</div>
-
 <div class="row">
 	<div class="col-xs-12 col-md-12 mb-4">
 		<div class="card shadow h-100">
@@ -189,6 +182,43 @@
                     <button class="btn btn-primary" style="width:100%;" data-toggle="modal" data-target="#usuario-clave-modal"><i class="fas fa-lock"></i> Cambiar mi contraseña</button>
                     </div>
 				    <div class="col-xs-3 col-md-3 mb-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12 col-md-12 mb-4">
+		<div class="card shadow">
+			<div class="card-header"><i class="fas fa-dolly-flatbed"></i><strong> Mis pedidos</strong></div>
+			<div class="card-body">
+				<div class="panel-body table-responsive">
+					<div class="row">
+						<div class="col-xl-12 col-md-12">
+							<div class="form-group">
+								<div class="row">
+            						<div class="col-xl-12 col-md-12 mb-4">
+        								<label> <strong>Escuela</strong></label>
+        							    <select name="escuela-select" id="escuela-pedido-select" class="form-control selectpicker" data-show-subtext="true" data-live-search="true"></select>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+        							    <br>
+							        </div>
+							    </div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
