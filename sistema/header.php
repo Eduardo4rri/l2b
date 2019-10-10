@@ -97,7 +97,7 @@
 						    { 
 						        
 						        // Evaluar si el acceso al modulo esta activado o desactivado e insertar en el menu principal en orden
-						        if (PAGINA_TIENDA)
+						        if (PAGINA_TIENDA && ($_SESSION['usuario_rol']=='alumno'))
 						        {
 						            echo '<li class="nav-item '  . ($_SESSION['web_pagina'] == 'registro.php' || $_SESSION['web_pagina'] == 'compra.php' || $_SESSION['web_pagina'] == 'pago.php' || $_SESSION['web_pagina'] == 'entrega.php' ? 'active' : '') . '">
 						                    <a class="nav-link" href="../tienda/registro.php"><i class="fas fa-shopping-cart"></i> <span class="badge badge-warning badge-pill" id="carrito-nav-cantidad" style="color: #67560F;">0</span> Tienda</a>
@@ -541,20 +541,4 @@
          
       ?>
 
-	<!-- Alert Usuario Start -->
-	<div class="alert blue-alert" role="alert">
-		<div class="row">
-			<div class="col-xs-12 col-md-12 mb-3 text-center" id="alert-bienvenida">
-				<br>
-				<img id="img-dom" class="rounded" style=" width: 120px; height: 120px; border-color: #cdd4e1;" src="../sistema/img/<?php echo $_SESSION['web_subdominio_imagen']; ?>" alt="">
-				<br>
-				<br>
-				<label id="mensaje-bienvenida"></label>
-				<br>
-				<label id="mensaje-dominio"></label>
-				<br>
-				<label id="mensaje-ultima-conexion"></label>
-			</div>
-		</div>
-	</div>
-	<!-- Alert Usuario End -->
+	

@@ -110,5 +110,21 @@
 
 /*Design*/
 
-/*LOGIN*/
+/*Alerts*/
+
+/*Coordinador Account*/
+
+.global_btn{
+	transition: 0.3s;
+	margin: 3px;
+}
+
+.global_btn:hover{
+	border-width: 3px;
+	border-color: #F68E1C;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 18px;
+
+}
 			
