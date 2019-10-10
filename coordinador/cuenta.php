@@ -7,6 +7,8 @@
 
 ?>
 
+
+
 <!-- Modal Datos Usuario -->
 <div class="modal fade" id="usuario-modal" tabindex="-1" role="dialog" aria-labelledby="usuario-modal-label" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 90% !important; width: 90% !important;" role="document">
@@ -97,10 +99,25 @@
 					</form>
 				</div>
 			</div>
-			<div class="modal-footer">
-				<div style="width: 100%;">
-					<button type="button" class="btn btn-secondary btn-block" data-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
-					<button type="button" class="btn btn-primary btn-block" id="usuario-guardar-datos"><i class="fas fa-check"></i> Guardar</button>
+			<center>
+				<div class="col-md-12 row">
+					<div class="col-md-6">
+						x
+						
+					</div>
+					<div class="col-md-6">
+						a
+					</div>
+				</div>
+			</center>
+			<div class="modal-footer col-md-12">
+				<div class="row col-md-12">
+					<div class="col-md-4">
+						<button type="button" class="btn btn-secondary btn-block" data-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
+					</div>
+					<div class="col-md-4">
+						<button type="button" class="btn btn-primary btn-block" id="usuario-guardar-datos"><i class="fas fa-check"></i> Guardar</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -145,12 +162,25 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-xs-12 col-md-12 mb-4">
-		<div class="card shadow h-100">
-			<div class="card-header"><i class="fas fa-user"></i><strong> Mis datos</strong></div>
-			<div class="card-body">
-				<div class="row mb-4">
+<!-- Alert Usuario Start -->
+	<div class="alert blue-alert" role="alert">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 mb-4 text-center" id="alert-bienvenida">
+				<br>
+				<img id="img-dom" class="rounded" style=" width: 120px; height: 120px; border-color: #cdd4e1;" src="../sistema/img/<?php echo $_SESSION['web_subdominio_imagen']; ?>" alt="">
+				<br>
+				<br>
+				<label id="mensaje-bienvenida"></label>
+				<br>
+				<label id="mensaje-dominio"></label>
+				<br>
+				<label id="mensaje-ultima-conexion"></label>
+			</div>
+			<div class="col-md-8">
+				<br>
+				<h3><i class="fas fa-user"></i>&nbsp;Mis datos</h3>
+				<hr>
+				<div class="row mb-6">
 					<div class="col-xs-3 col-md-3">
 						<strong>Nombre</strong>
 						<p class="card-text" id="confirmacion-usuario"></p>
@@ -170,23 +200,24 @@
 					<div class="col-xs-3 col-md-3">
 						<strong>Correo Electrónico</strong>
 						<p class="card-text" id="confirmacion-usuario-login"></p>
-					</div>
+					</div>	
 				</div>
-				<br>
-				<div class="row">
-				    <div class="col-xs-3 col-md-3 mb-3"></div>
+				<br><br>
+				<div class="col-md-12">
+					<div class="row">
+				    <div class="col-xs-3 col-md-3"></div>
 				    <div class="col-xs-3 col-md-3 mb-3">
-				        <button class="btn btn-primary" style="width:100%;" data-toggle="modal" data-target="#usuario-modal"><i class="fas fa-edit"></i> Editar mis datos</button>
+				        <button class="btn btn-primary global_btn" data-toggle="modal" data-target="#usuario-modal"><i class="fas fa-edit"></i> Editar mis datos</button>
 				    </div>
 				    <div class="col-xs-3 col-md-3 mb-3">
-                    <button class="btn btn-primary" style="width:100%;" data-toggle="modal" data-target="#usuario-clave-modal"><i class="fas fa-lock"></i> Cambiar mi contraseña</button>
+                    <button class="btn btn-primary global_btn" data-toggle="modal" data-target="#usuario-clave-modal"><i class="fas fa-lock"></i> Cambiar mi contraseña</button>
                     </div>
-				    <div class="col-xs-3 col-md-3 mb-3"></div>
+				</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+	<!-- Alert Usuario End -->
 
 <div class="row">
 	<div class="col-xs-12 col-md-12 mb-4">
