@@ -113,7 +113,7 @@ function login($login, $clave, $dominio)
             $usr->usuario_programa_nombre      = $rspta->programa_nombre;
             $usr->usuario_programa_nivel       = $rspta->programa_nivel;
         }
-    }
+    } 
     if ($login_encontrado == true)
     {
         $dominatrix                                    = new Dominio();

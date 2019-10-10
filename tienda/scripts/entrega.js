@@ -411,7 +411,7 @@ function tiendaCargarDatosVenta()
 				html_articulos += '		<th>Precio</th>';
 				html_articulos += '		<th>Cantidad</th>';
 				html_articulos += '		<th>Total</th>';
-				html_articulos += '	</tr>';
+				html_articulos += '	</tr>'; 
 				html_articulos += '</thead>';
 				html_articulos += '<tbody>'; 
 				for (var i = 0; i < detalles.length; i++)
