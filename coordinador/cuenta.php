@@ -224,56 +224,141 @@
 		<div class="card shadow">
 			<div class="card-header"><i class="fas fa-dolly-flatbed"></i><strong> Mis pedidos</strong></div>
 			<div class="card-body">
-				<div class="panel-body table-responsive">
+				<div class="panel-body">
 					<div class="row">
 						<div class="col-xl-12 col-md-12">
 							<div class="form-group">
 								<div class="row">
             						<div class="col-xl-12 col-md-12 mb-4">
-        								<label> <strong>Escuela</strong></label>
-        							    <select name="escuela-select" id="escuela-pedido-select" class="form-control selectpicker" data-show-subtext="true" data-live-search="true"></select>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-        							    <br>
-							        </div>
-							    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-xs-12 col-md-12 mb-4">
-		<div class="card shadow">
-			<div class="card-header"><i class="fas fa-dolly-flatbed"></i><strong> Mis consignaciones y entregas</strong></div>
-			<div class="card-body">
-				<div class="panel-body table-responsive">
-					<div class="row">
-						<div class="col-xl-12 col-md-12">
-							<div class="form-group">
-								<div class="row">
-            						<div class="col-xl-12 col-md-12 mb-4">
-        								<label> <strong>Escuela</strong></label>
+        								<h4> <strong>Selecciona Escuela</strong></h4>
         							    <select name="escuela-select" id="escuela-select" class="form-control selectpicker" data-show-subtext="true" data-live-search="true"></select>
 							        </div>
 							    </div>
 							    <div class="row">
+							    	<div class="col-xl-6 col-md-6 mb-4">
+							    		<h4><strong>Realiza tu pedido</strong></h4>
+							    		<hr>
+							    		 <table id="example" class="display nowrap table-striped table-bordered" style="width:100%"> 
+									        <thead>
+									            <tr>
+									                <th>Nivel</th>
+									                <th>Stock actual</th>
+									                <th>Necesito</th>
+									                <th>Pedido</th>
+									            </tr>
+									        </thead>
+									        <tbody>
+									            <tr>
+									                <td>Advanced</td>
+									                <td>200</td>
+									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td>0</td>
+									            </tr>
+									            <tr>
+									                <td>Elementary</td>
+									                <td>150</td>
+									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td>0</td>
+									            </tr>
+									            <tr>
+									                <td>Beginner</td>
+									                <td>100</td>
+									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td>0</td>
+									            </tr>
+									            <tr>
+									                <td>Intermediate</td>
+									                <td>100</td>
+									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td>0</td>
+									            </tr>
+									            <tr>
+									                <td>Upper-intermediate</td>
+									                <td>100</td>
+									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td>0</td>
+									            </tr>
+									            <tr>
+									                <td>TOTAL DE LIBROS</td>
+									                <td>650</td>
+									                <td>0</td>
+									                <td>0</td>
+									            </tr>
+									        </tbody>
+									    </table>
+							    	</div>
+							    	<div class="col-xl-6 col-md-6 mb-4">
+							    		<h4><strong>Tus pedidos</strong></h4>
+							    		<hr>
+							    		<table id="table-pedidos" class="display nowrap table-striped table-bordered" style="width:100%"> 
+									        <thead>
+									            <tr>
+									                <th># Pedido</th>
+									                <th>Nombre</th>
+									                <th>Nivel</th>
+									                <th>Total de libros</th>
+									                <th>Detalles</th>
+									            </tr>
+									        </thead>
+									        <tbody>
+									            <tr>
+									                <td>1</td>
+									                <td>TECNM MACUSPANA Inglés Curricular</td>
+									                <td>Elementary to Intermediate</td>
+									                <td>1500</td>
+									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									            </tr>
+									            <tr>
+									                <td>2</td>
+									                <td>150</td>
+									                <td></td>
+									                <td>0</td>
+									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									            </tr>
+									            <tr>
+									                <td>3</td>
+									                <td>100</td>
+									                <td></td>
+									                <td>0</td>
+									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									            </tr>
+									            <tr>
+									                <td>4</td>
+									                <td>100</td>
+									                <td></td>
+									                <td>0</td>
+									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									            </tr>
+									            <tr>
+									                <td>5</td>
+									                <td>100</td>
+									                <td></td>
+									                <td>0</td>
+									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									            </tr>
+									        </tbody>
+									    </table>
+							    	</div>	
+							    </div>
+							    <div class="row">
+            						<div class="col-xl-9 col-md-9 mb-4">
+        								<h5> <strong>Selecciona tu programa</strong></h5>
+        							    <select name="programa-select" id="programa-select" class="form-control selectpicker" data-show-subtext="true" data-live-search="true"></select>
+							        </div>
+							        <div class="col-xl-3 col-md-3 mb-4 align-right">
+							        	<br>
+							        	<button class="btn btn-success" style="margin-top: 10px;">Confirmar</button>
+							    	</div>
+							    </div>
+
+							    
+							    <br>
+
+							    
+
+							    <div class="row">
                                     <div class="col-xl-12 col-md-12 mb-4">
-        								<label> <strong>Estatus general de la escuela</strong></label>
+        								<h4> <strong>Estatus general de la escuela</strong></h4>
         								<br>
         								<br>
         								<br>

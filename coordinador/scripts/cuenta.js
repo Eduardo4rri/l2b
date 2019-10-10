@@ -1,3 +1,17 @@
+ $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+    var table_pedidos = $('#table-pedidos').DataTable( {
+        rowReorder: {
+            selector: 'td:nth-child(2)'
+        },
+        responsive: true
+    } );
+} );
 var g_coordinador_escuela_seleccionada_id = -1;
 var g_coordinador_curso_seleccionado_id = -1;
 var g_mapa_subzonas = new Array();
