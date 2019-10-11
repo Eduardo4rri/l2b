@@ -130,4 +130,16 @@
 		
 .sorting{
 	padding-top: 15px!important;
+}
+
+.sorting_1{
+	padding-top: 15px!important;
+}
+
+/*Ask to eduardo this*/
+#example_length,
+#example_filter,
+#example_info,
+#example_paginate{
+	display: none;
 }	

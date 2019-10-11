@@ -7,7 +7,25 @@
 
 ?>
 
+<!-- Modal Detalles Pedido -->
 
+<div class="modal fade" id="pedido-detalle" tabindex="-1" role="dialog" aria-labelledby="usuario-modal-label" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 90% !important; width: 90% !important;" role="document">
+		<div class="modal-content">
+			<div class="modal-header modal-vegdi">
+				<h5 class="modal-title"><i class="fas fa-user"></i> Detalles de mi pedido</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+				<div class="modal-body">
+					<div class="card card-body">
+							
+					</div>
+				</div>	
+		</div>	
+	</div>
+</div>	
 
 <!-- Modal Datos Usuario -->
 <div class="modal fade" id="usuario-modal" tabindex="-1" role="dialog" aria-labelledby="usuario-modal-label" aria-hidden="true">
@@ -100,26 +118,14 @@
 				</div>
 			</div>
 			<center>
-				<div class="col-md-12 row">
-					<div class="col-md-6">
-						x
-						
-					</div>
-					<div class="col-md-6">
-						a
+				<div class="modal-footer col-md-12 row">
+
+					<div class="col-sm-12 col-xs-12">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
+						<button type="button" class="btn btn-success" id="usuario-guardar-datos"><i class="fas fa-check"></i> Guardar</button>
 					</div>
 				</div>
 			</center>
-			<div class="modal-footer col-md-12">
-				<div class="row col-md-12">
-					<div class="col-md-4">
-						<button type="button" class="btn btn-secondary btn-block" data-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
-					</div>
-					<div class="col-md-4">
-						<button type="button" class="btn btn-primary btn-block" id="usuario-guardar-datos"><i class="fas fa-check"></i> Guardar</button>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
@@ -152,12 +158,15 @@
 					</form>
 				</div>
 			</div>
-			<div class="modal-footer">
-				<div style="width: 100%;">
-					<button type="button" class="btn btn-secondary btn-block" data-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>
-					<button type="button" class="btn btn-primary btn-block" id="usuario-guardar-clave"><i class="fas fa-check"></i> Guardar</button>
+			<center>
+				<div class="modal-footer col-md-12 row">
+
+					<div class="col-sm-12 col-xs-12">
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fas fa-times"></i> Cerrar</button>
+						<button type="button" class="btn btn-success" id="usuario-guardar-clave"><i class="fas fa-check"></i> Guardar</button>
+					</div>
 				</div>
-			</div>
+			</center>
 		</div>
 	</div>
 </div>
@@ -236,8 +245,14 @@
 							    </div>
 							    <div class="row">
 							    	<div class="col-xl-6 col-md-6 mb-4">
-							    		<h4><strong>Realiza tu pedido</strong></h4>
-							    		<hr>
+							    		<div class="col-md-12 row">
+							    			<div class="col-md-6">
+							    				<h4><strong>Realiza tu pedido</strong></h4>
+							    			</div>
+							    			<div class="col-md-6 text-right">
+							    				<button class="btn btn-success">Confirmar</button>
+							    			</div>
+							    		</div>							    		<hr>
 							    		 <table id="example" class="display nowrap table-striped table-bordered" style="width:100%"> 
 									        <thead>
 									            <tr>
@@ -250,39 +265,39 @@
 									        <tbody>
 									            <tr>
 									                <td>Advanced</td>
-									                <td>200</td>
+									                <td class="text-right">200</td>
 									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
-									                <td>0</td>
+									                <td class="text-right">0</td>
 									            </tr>
 									            <tr>
 									                <td>Elementary</td>
-									                <td>150</td>
-									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
-									                <td>0</td>
+									                <td class="text-right">150</td>
+									                <td class="text-right"><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td class="text-right">0</td>
 									            </tr>
 									            <tr>
 									                <td>Beginner</td>
-									                <td>100</td>
-									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
-									                <td>0</td>
+									                <td class="text-right">100</td>
+									                <td class="text-right"><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td class="text-right">0</td>
 									            </tr>
 									            <tr>
 									                <td>Intermediate</td>
-									                <td>100</td>
-									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
-									                <td>0</td>
+									                <td class="text-right">100</td>
+									                <td class="text-right"><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td class="text-right">0</td>
 									            </tr>
 									            <tr>
 									                <td>Upper-intermediate</td>
-									                <td>100</td>
-									                <td><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
-									                <td>0</td>
+									                <td class="text-right">100</td>
+									                <td class="text-right"><input type="text" id="row-2-position" name="row-2-position" value="0"></td>
+									                <td class="text-right">0</td>
 									            </tr>
 									            <tr>
-									                <td>TOTAL DE LIBROS</td>
-									                <td>650</td>
-									                <td>0</td>
-									                <td>0</td>
+									            	<td>Total de libros</td>
+									            	<td class="text-right">650</td>
+													<td class="text-right">0</td>
+													<td class="text-right">0</td>
 									            </tr>
 									        </tbody>
 									    </table>
@@ -305,51 +320,49 @@
 									                <td>1</td>
 									                <td>TECNM MACUSPANA Inglés Curricular</td>
 									                <td>Elementary to Intermediate</td>
-									                <td>1500</td>
+									                <td class="text-right" >1500</td>
 									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
 									            </tr>
 									            <tr>
 									                <td>2</td>
 									                <td>150</td>
 									                <td></td>
-									                <td>0</td>
+									                <td class="text-right">0</td>
 									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
 									            </tr>
 									            <tr>
 									                <td>3</td>
 									                <td>100</td>
 									                <td></td>
-									                <td>0</td>
+									                <td class="text-right">0</td>
 									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
 									            </tr>
 									            <tr>
 									                <td>4</td>
 									                <td>100</td>
 									                <td></td>
-									                <td>0</td>
+									                <td class="text-right">0</td>
 									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
 									            </tr>
 									            <tr>
 									                <td>5</td>
 									                <td>100</td>
 									                <td></td>
-									                <td>0</td>
-									                <td><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
+									                <td class="text-right">0</td>
+									                <td><button class="btn btn-success" data-toggle="modal" data-target="#pedido-detalle"><i class="fas fa-eye"></i></button></td>
 									            </tr>
 									        </tbody>
-									    </table>
-							    	</div>	
-							    </div>
-							    <div class="row">
+									        <div class="row">
             						<div class="col-xl-9 col-md-9 mb-4">
         								<h5> <strong>Selecciona tu programa</strong></h5>
         							    <select name="programa-select" id="programa-select" class="form-control selectpicker" data-show-subtext="true" data-live-search="true"></select>
 							        </div>
-							        <div class="col-xl-3 col-md-3 mb-4 align-right">
-							        	<br>
-							        	<button class="btn btn-success" style="margin-top: 10px;">Confirmar</button>
-							    	</div>
+							        
 							    </div>
+									    </table>
+							    	</div>	
+							    </div>
+							    
 
 							    
 							    <br>
