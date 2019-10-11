@@ -323,35 +323,35 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
+                                                    <td class="text-center">1</td>
                                                     <td>TECNM MACUSPANA Inglés Curricular</td>
                                                     <td>Elementary to Intermediate</td>
                                                     <td class="text-right">1500</td>
                                                     <td class="text-center"><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>2</td>
+                                                    <td class="text-center">2</td>
                                                     <td>150</td>
                                                     <td></td>
                                                     <td class="text-right">0</td>
                                                     <td class="text-center"><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>3</td>
+                                                    <td class="text-center">3</td>
                                                     <td>100</td>
                                                     <td></td>
                                                     <td class="text-right">0</td>
                                                     <td class="text-center"><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>4</td>
+                                                    <td class="text-center">4</td>
                                                     <td>100</td>
                                                     <td></td>
                                                     <td class="text-right">0</td>
                                                     <td class="text-center"><button class="btn btn-success"><i class="fas fa-eye"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>5</td>
+                                                    <td class="text-center">5</td>
                                                     <td>100</td>
                                                     <td></td>
                                                     <td class="text-right">0</td>
