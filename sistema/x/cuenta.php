@@ -54,6 +54,11 @@ switch ($_POST['op'])
         $datos_adicionales = isset($_POST['datos_adicionales']) ? $_POST['datos_adicionales'] : null;
         echo json_encode(enviarMensajeDeAyuda($idusuario, $nombre, $correo, $datos_adicionales), JSON_NUMERIC_CHECK);
         break;
+
+    case 'cargaTablaEnviosPorEscuela':
+        $idconsignacion = isset($_POST['idconsignacion']) ? $_POST['idconsignacion'] : null;
+        echo json_encode(cargaTablaEnviosPorEscuela($idconsignacion), JSON_NUMERIC_CHECK);
+        break;
 }
 
 ob_end_flush();

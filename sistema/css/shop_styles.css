@@ -92,6 +92,7 @@
 			width: 50px;
 			margin-bottom: 20px;
 			box-shadow: 1px 3px 5px #86c3ff;
+			z-index: 1;
 		}
 
 		.fixed-map-nav-button {

@@ -23,7 +23,7 @@ define('PRO_VIDEO_COORDINADOR_ENTREGAS', 'https://www.youtube.com/embed/faIV_yQx
 // Modo debug
 define('PRO_DEBUG', true);
 define('PRO_DEBUG_MENSAJE', 'Debugeando en LiquidWeb');
-define('PRO_DEBUG_SUBDOMINIO', 'tecnm'); 
+define('PRO_DEBUG_SUBDOMINIO', 'cgut'); 
 define('PRO_DEBUG_DOMINIO', 'links2books.com');
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

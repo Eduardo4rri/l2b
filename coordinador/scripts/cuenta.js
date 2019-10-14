@@ -77,6 +77,7 @@ function init()
 	obtenerZonasSubzonas();
 	obtenerEscuelasSeleccionadas();
 	listarEscuelasSeleccionadas();
+	crearDataTablePedidos();
 }
 
 function crearDataTableVentas(idventa)
@@ -147,6 +148,61 @@ function crearDataTableVentas(idventa)
 		{
 			title: 'Balance en En Almacén',
 			data: 'totales_inventario'
+		}]
+	});
+}
+
+function crearDataTablePedidos()
+{
+	var table = $('#tabla-pedido').DataTable(
+	{
+		destroy: true,
+		responsive: true,
+		searching: true,
+		paging: false,
+		//ordering: true,
+		'bSort': false,
+		info: false,
+		//scrollY: '2000px',
+		//scrollX: true,
+		scrollCollapse: true,
+		columnDefs: [
+		{
+			width: 200,
+			targets: [0,1,2,3]
+		}],
+		language:
+		{
+			lengthMenu: 'Mostrar  _MENU_  registros',
+			search: 'Filtrar',
+			zeroRecords: ' ',
+			infoFiltered: '(Se filtraron _MAX_ registros totales)',
+			info: 'Mostrando _START_ a _END_ de _TOTAL_ registros totales',
+			paginate:
+			{
+				first: 'Primero',
+				last: 'Último',
+				next: 'Siguiente',
+				previous: 'Anterior'
+			},
+		},
+		data: null,
+		columns: [
+		{
+			title: 'Nivel',
+			data: 'nivel'
+		},
+		{
+			title: 'Stock Actual',
+			data: 'stock_actual'
+		},
+		{
+			title: 'Necesito',
+			data: 'necesito'
+		},
+		{
+			title: 'Pedido',
+			data: 'pedido'
 		}]
 	});
 }
@@ -656,6 +712,7 @@ function listarProgramaCursosEscuela(idescuela)
 			if (data.resultado === 'OK')
 			{
 				var ndata = data.detalles;
+		    	cargarTablaDePedidosPorEscuela(ndata);
 				var html_cursos = '<option value="-1">Selecciona un curso</option>';
 				
 				var totales_solicitados = 0;
@@ -695,7 +752,7 @@ function listarProgramaCursosEscuela(idescuela)
 				console.log('totales_por_entregar: ' + totales_por_entregar);
 				console.log('totales_por_pagar: ' + totales_por_pagar);
 				console.log('totales_inventario: ' + totales_inventario);
-				
+
 				$('#entregas-solicitados').html(totales_solicitados);
 				$('#entregas-totales').html(totales_total);
 				$('#entregas-pagadas').html(totales_pagadas);
@@ -734,6 +791,19 @@ function listarProgramaCursosEscuela(idescuela)
 			}
 		}
 	}).done(function() {});
+}
+
+function cargarTablaDePedidosPorEscuela(ndata)
+{
+	console.log(ndata);
+	for (var i = 0; i < ndata.length; i++) {
+		console.log(ndata[i].ventas.detalles);
+		var ventas = ndata[i].ventas.detalles;
+		for (var i = 0; i < ventas.length; i++) {
+			console.log(ventas[0].niveles);
+			console.log(ventas[0].totales);
+		}
+	}
 }
 
 function listarVentasDeCoordinadorPorEscuelaYCurso()

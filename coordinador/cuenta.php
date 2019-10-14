@@ -247,7 +247,7 @@
                                     <div class="col-xl-6 col-md-6 mb-4">
 										<h4><strong>Realiza tu pedido</strong></h4>
                                         <hr>
-                                        <table id="example" class="display nowrap table-striped table-bordered" style="width:100%">
+                                        <table id="tabla-pedido" class="display nowrap table-striped table-bordered" style="width:100%">
                                             <thead>
                                                 <tr>
                                                     <th>Nivel</th>
@@ -290,7 +290,7 @@
                                             </tbody>
                                             <tfoot>
                                                 <tr>
-                                                    <td>Total de libros</td>
+                                                    <td><strong>Total de libros</strong></td>
                                                     <td class="text-right">650</td>
                                                     <td class="text-center">0</td>
                                                     <td class="text-right">0</td>
